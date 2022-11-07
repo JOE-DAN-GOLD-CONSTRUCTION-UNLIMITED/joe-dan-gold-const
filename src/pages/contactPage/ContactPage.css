@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.contact-page{
+    margin-top: 180px;
+}
+
+.contact-us-header{
+    font-size: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 31px 0px #cacacc52;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: blue;
+}
+
+.know-us-better h1{
+    text-align: center;
+    font-size: 4.0rem;
+    margin-bottom: 0;
+}
+.phone-email-address{
+    display: flex;
+    justify-content: space-between;  
+    margin: 2% auto 0;
+    width: 85%;
+}
+
+.phone-email-address img{
+   width:50px;
+   height: 50px;
+}
+
+.phone-id, .email-id, .address-id {
+    display: flex;
+    align-items:center;
+    gap: 15px;
+}
+
+.ph-em-ad h2{
+    margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.ph-em-ad p{
+    margin-top: 0;
+    color: blue;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.ph-em-ad a{
+  text-decoration: none;
+}
+
+
+.get-in-touch{
+    text-align: center;
+}
+
+.get-in-touch h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.get-in-touch p{
+    width: 45%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    color: #c2c2c2f6;;
+}
+
+.contact-page-form{
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.fullname-mobile-email{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0 30px;
+}
+
+.fullname-mobile-email input{
+    padding: 15px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    background-color: #d9d9d971; 
+    width: 100%;
+    outline: none;
+    border: none;
+   
+}
+
+.subject input{
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    background-color: #d9d9d971;
+    /* background-color: #ffffff; */
+    /* box-shadow: 0px 4px 31px 0px #00000052; */
+    outline: none;
+    border: none;
+}
+
+.message textarea{
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    background-color: #d9d9d971;
+    /* background-color: #ffffff; */
+    /* box-shadow: 0px 4px 31px 0px #00000052; */
+    outline: none;
+    border: none;
+}
+
+.send-message{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width:1000px) {
+    
+    .phone-email-address {
+        display: grid;
+    }
+    
+    #address-cp{
+        margin-top: 0px;
+    }
+    
+    .address-id {
+        align-items: flex-start;
+    }
+    
+    .address-id img{
+        margin-top: 50px;
+    }
+
+    .get-in-touch p{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact-page-form{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    
+    .fullname-mobile-email{
+        display: block;
+        margin: 5% 0 0px;
+    }
+
+    .fullname-mobile-email input{
+        margin-bottom: 30px;
+        width: 90%;
+
+    }
+
+    .subject input{
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .message textarea{
+        margin-bottom: 30px;
+        width: 90%;
+       
+    }
+    
+}
