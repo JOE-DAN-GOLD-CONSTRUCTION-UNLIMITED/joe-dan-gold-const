@@ -1,10 +1,10 @@
-.faq-pg{
+.privacy-pg{
     background-color: #424348;
     display: flex;
     justify-content: center;
     height: 120px;
 }
-.faq-header{
+.privacy-header{
     font-size: 2rem;
     background-color:orange;
     box-shadow: 0px 4px 31px 0px #cacacc52;
@@ -13,33 +13,31 @@
     color: white;
 }
 
-.faq-details{
+.privacy-details{
     width: 80%;
     margin: 0 auto;
 }
 
-.faq-details h2{
-    font-size: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-}
-
-.faq-details p{
-    word-spacing: 0.4rem;
+.privacy-details li{
+    list-style-type: disc;
+    word-spacing: 0.2rem;
     font-size: 1.2rem;
-    line-height: 1.5rem;
-    font-weight: lighter;
     font-family:'Raleway', sans-serif;
-    margin-bottom: 50px;
+
 }
-
-
+.privacy-details p{
+    word-spacing: 0.2rem;
+    font-size: 1.2rem;
+    font-family:'Raleway', sans-serif;
+    margin-bottom: 30px;
+}
 
 
 /* RESPONSIVE */
 
 @media screen and (max-width:600px) {
     
-    .faq-header h1{
+    .privacy-header h1{
         font-size: 1.5rem;
         margin-top: 70px;
     }

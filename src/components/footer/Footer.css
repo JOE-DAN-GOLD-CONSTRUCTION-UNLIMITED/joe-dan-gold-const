@@ -8,8 +8,9 @@ footer *{
 
 .footer{
     color: #d9d9d9;
-    background-color: rgb(10, 23, 82);
+    background-color: #161825;
     font-family: 'Poppins', sans-serif;
+    padding: 0 1%;
 }
 
 .content ul,li {
@@ -18,33 +19,33 @@ footer *{
    
 }
 
-.content p{
-    line-height: 1.8rem;
-}
-
-
 .content a{
     color: white;
     text-decoration: none;
 }
 
 .content a:hover{
-    color: red;
+    color:#ffc107
+
 }
 
 .main-content{
     display: flex;
 }
-.box h2{
-    color: #ccec12;
+
+.qu-sm{
+    display: flex;
 }
 
-.box h3{
-    color: #9dff00fb;
+.box h2{
+    font-size: 1.2rem;
+    color: #ffc107;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.3rem;
 }
 
 #logo{
-    width: 230px;
+    width: 250px;
     height:220px;
     object-fit: cover;
 }
@@ -54,7 +55,7 @@ footer *{
 }
 .main-content .box{
     flex-basis: 50%;
-    padding: 10px 20px;
+    padding: 20px 2px;
 }
 
 .box .content{
@@ -62,15 +63,31 @@ footer *{
     line-height: 35px;
 }
 
-#address{
-    line-height: 22px;
+#cub{
+    margin-top: 20px;
 }
+
+.ft-input{
+    padding: 10px 5%;
+    font-size: 1.5em;
+    border: 1px solid white;
+    width: 100%;
+    margin-bottom: 20px;
+    background: inherit;
+    color: white;
+}
+
+.send-message-btn button{
+    width: 100%;
+    border-radius: 0;
+}
+
 .footer-bottom, center{
-    padding: 15px;
+    padding: 20px;
     font-size: 0.9rem;
     letter-spacing: 1px;
-    background-color: rgba(18, 114, 239, 0.786);
-    color: black;
+    background-color:#424348;
+    color:white;
     font-weight: bolder;
     display: flex;
     justify-content: space-around;
@@ -83,11 +100,11 @@ footer *{
 }
 
 .footer-right-bottom a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .footer-right-bottom  a:hover{
-    color: red;
+    color:#ffc107;
 }
 
 
@@ -95,9 +112,13 @@ footer *{
     footer{
         position: relative;
         bottom: 0px;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0;
     }
-
+    #logo{
+       margin-left: 50px;
+    }
     .contentz {
         display: flex;
         justify-content: center;
@@ -109,13 +130,14 @@ footer *{
         flex-direction: column;
     }
     
+    #cub{
+        margin-top: 0;
+        padding: 0;
+    }
+    
     .main-content{
         flex-wrap: wrap;
         flex-direction: column;
-    }
-
-    .main-content .box{
-        margin: 5px 0;
     }
 
     .footer-bottom, center{

@@ -56,7 +56,6 @@ export default function NavBar({ currentPage }) {
   
   return (
     <div className= {show ? 'opacity' : ''}>
-      <div className='top-margin'></div>
       <nav className={navbar ? 'nav-bar active' : 'nav-bar'}>
 
         <div className='contact-details-container'>
@@ -77,11 +76,11 @@ export default function NavBar({ currentPage }) {
         <div className='j-d-navbar'>
 
           <div className='navigation-bar-content'>
-            <div className='navigation-logo'>
+            <    
+            div className='navigation-logo'>
               <Link to='/' >
                 <img src={logo} alt="phone"/>
-              </Link>     
-            </div>
+              </Link> </div>
 
             <div className='navigation-items'>
               <Link to='/' onClick={ScrollToTop()} pathname='/'>
@@ -93,7 +92,7 @@ export default function NavBar({ currentPage }) {
                 <p>ABOUT</p>
               </Link>
 
-              <Link to='/project' onClick={ScrollToTop()} pathname='/project' >  
+              <Link to='/projects' onClick={ScrollToTop()} pathname='/project' >  
                 <p>PROJECT</p>
               </Link>
 
@@ -119,14 +118,14 @@ export default function NavBar({ currentPage }) {
             <div className="links-section">
               <img src={menu} alt="menu" className='menu' onClick={shower} />
               <div className={!show ? 'links show' : 'links'}>
-                <p onClick={shower} style = {{cursor: 'pointer'}} className = 'exit'><MdCancel size = {55}/></p> 
+                <p onClick={shower} style = {{cursor: 'pointer'}} className = 'exit'><MdCancel size = {55} style={{marginTop:'30px'}}/></p> 
               
                 <p>
                   <Link to='/' className='link' style={page("Home")} > <p>HOME</p></Link>
 
                   <Link to='/about' className='link' style={page("about")} > <p>ABOUT</p></Link> 
                   
-                  <Link to='/project' className='link' style={page("project")} > <p>PROJECT</p></Link> 
+                  <Link to='/projects' className='link' style={page("project")} > <p>PROJECT</p></Link> 
                   
                   <Link to='/staff' className='link' style={page("staff")} > <p>STAFF</p></Link> 
                   

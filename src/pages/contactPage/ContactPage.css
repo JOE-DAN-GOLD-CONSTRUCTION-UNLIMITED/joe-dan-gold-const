@@ -1,186 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-*{
-    font-family: 'Oswald', sans-serif;
-}
-.contact-page{
-    margin-top: 180px;
-}
-
-.contact-us-header{
-    font-size: 2rem;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 31px 0px #cacacc52;
-    height: 150px;
+.contact-us-pg{
+    background-color: #424348;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-    color: blue;
+    height: 120px;
 }
-
-.know-us-better h1{
-    text-align: center;
-    font-size: 4.0rem;
-    margin-bottom: 0;
-}
-.phone-email-address{
+.contact-us-header{
+    font-size: 2rem;
+    background-color:orange;
+    box-shadow: 0px 4px 31px 0px #cacacc52;
     display: flex;
-    justify-content: space-between;  
-    margin: 2% auto 0;
-    width: 85%;
+    justify-content: center;
+    color: white;
 }
 
-.phone-email-address img{
-   width:50px;
-   height: 50px;
+.contact-container{
+    background-color: wheat;
+    padding: 7% 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(../../assets/images/homeP.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.phone-id, .email-id, .address-id {
+.contact-details{
     display: flex;
-    align-items:center;
-    gap: 15px;
-}
-
-.ph-em-ad h2{
-    margin-top: 50px;
-  margin-bottom: 0;
-}
-
-.ph-em-ad p{
-    margin-top: 0;
-    color: blue;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-}
-
-.ph-em-ad a{
-  text-decoration: none;
-}
-
-
-.get-in-touch{
-    text-align: center;
-}
-
-.get-in-touch h1{
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-}
-
-.get-in-touch p{
-    width: 45%;
+    width: 80%;
     margin: 0 auto;
-    font-size: 1.8rem;
-    color: #c2c2c2f6;;
 }
 
 .contact-page-form{
-    width: 85%;
-    margin: 0 auto;
-
-}
-
-.fullname-mobile-email{
-    display: flex;
-    justify-content: space-between;
-    margin: 5% 0 30px;
-}
-
-.fullname-mobile-email input{
-    padding: 15px;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    border-radius: 10px;
-    background-color: #d9d9d971; 
-    width: 100%;
-    outline: none;
-    border: none;
-   
-}
-
-.subject input{
-    padding: 15px;
-    margin-bottom: 30px;
-    width: 100%;
-    border-radius: 10px;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    background-color: #d9d9d971;
-    /* background-color: #ffffff; */
-    /* box-shadow: 0px 4px 31px 0px #00000052; */
-    outline: none;
-    border: none;
-}
-
-.message textarea{
-    padding: 15px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    background-color: #d9d9d971;
-    /* background-color: #ffffff; */
-    /* box-shadow: 0px 4px 31px 0px #00000052; */
-    outline: none;
-    border: none;
-}
-
-.send-message{
+    width: 50%;
+    padding: 5% 2%;
+    opacity: 0.9;
+    background-color: white;
     text-align: center;
-    margin-bottom: 30px;
 }
 
+.contact-page-form input{
+    width: 70%;
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 2% 3%;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 10px 0px #cacacc52;
+}
 
-@media screen and (max-width:1000px) {
-    
-    .phone-email-address {
-        display: grid;
+.contact-page-form textarea{
+    width: 70%;
+    height: 80px;
+    margin-bottom: 30px;
+    padding: 2% 3%;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 10px 0px #cacacc52;
+}
+
+.cn-send-message button{
+    width: 250px;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    box-shadow: 1px  2px 1px 1px rgb(143, 98, 30);
+}
+
+.cn-send-message button:hover{
+    background-color: #ffc107;
+    box-shadow: 1px  2px 1px 1px black;
+    color: black;
+}
+
+.map{
+    background-color: whitesmoke;
+    width: 50%;
+}
+
+.moving-truck{
+    display: flex;
+    height: 100px;
+    padding: 20px 0;
+}
+
+.moving-truck:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background:url(../../assets/images/truck2.png) ;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    animation:ease 30s ease backwards;
+    animation-iteration-count: infinite;
+}
+  
+  
+  @keyframes ease{
+    0%{
+        left: 80%;
     }
-    
-    #address-cp{
-        margin-top: 0px;
+    50%{
+        left: 60%;
     }
-    
-    .address-id {
-        align-items: flex-start;
+    100%{
+        left: 80%;
     }
+  }
+  
+
+.moving-truck::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background:url(../../assets/images/truck.png) ;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    animation: text 50s linear forwards;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+
+}
+  
+  
+  @keyframes text{
+    0%{
+        left: 5%;
+    }
+    50%{
+        left: 40%;
+    }
+    100%{
+        left: 0%;
+    }
+
+  }
+  
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:600px) {
     
-    .address-id img{
+    .contact-us-header h1{
+        font-size: 2rem;
         margin-top: 50px;
     }
 
-    .get-in-touch p{
-        width: 80%;
-        margin: 0 auto;
+    .contact-details{
+        display: grid;
     }
 
     .contact-page-form{
-        width: 90%;
-        margin: 0 auto;
-
-    }
-    
-    .fullname-mobile-email{
-        display: block;
-        margin: 5% 0 0px;
+        width: 100%;
+        padding: 7% 0;
+        opacity: 0.9;
+        background-color: white;
     }
 
-    .fullname-mobile-email input{
-        margin-bottom: 30px;
-        width: 90%;
-
+    .cn-send-message button{
+        width: 80%;
     }
 
-    .subject input{
-        margin-bottom: 30px;
-        width: 90%;
+    .map{
+        display: none;
     }
 
-    .message textarea{
-        margin-bottom: 30px;
-        width: 90%;
-       
+    .moving-truck{
+        display: none;
+        height: 50px;
+        padding: 10px 0;
     }
-    
+
+    .cnt-footer{
+        margin-top: 50px;
+    }
 }

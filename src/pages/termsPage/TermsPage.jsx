@@ -12,11 +12,15 @@ function TermsPage() {
         <NavBar/> 
       </div>
       
+      <div className='terms-pg'>
+        <h2>Terms and Conditions Page</h2>
+      </div>
+
       <div className='terms-header'>
-        <h2>Terms and Conditions</h2>
+        <h1>TERMS AND CONDITIONS</h1>
       </div>
       
-      <div className='terms'>
+      <div className='terms-details'>
         {
           terms.map((term, index) => (
             <React.Fragment key={index}>

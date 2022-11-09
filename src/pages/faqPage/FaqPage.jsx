@@ -12,11 +12,15 @@ function FaqPage() {
         <NavBar/>
       </div>
 
-      <div className='faq-header'>
-        <h2>Frequently Asked Questions</h2>
+      <div className='faq-pg'>
+        <h2>Frequently Asked Questions Page</h2>
       </div>
 
-      <div className='faqs'>
+      <div className='faq-header'>
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+      </div>
+
+      <div className='faq-details'>
         {
           faqs.map((faq, index) => (
             <React.Fragment key={index}>

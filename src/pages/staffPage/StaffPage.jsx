@@ -1,8 +1,9 @@
 import React from 'react'
-
+import './StaffPage.css'
 import NavBar from '../../components/navBar/NavBar';
-
-import staffs from './staff.json'
+import staffs from './staffs.json'
+import { Link } from "react-router-dom";
+import CustomButton from '../../components/custombutton/CustomButton';
 import Footer from '../../components/footer/Footer';
 function StaffPage() {
     return (
@@ -11,6 +12,10 @@ function StaffPage() {
             <div>
                 <NavBar/> 
             </div>    
+
+            <div className='staff-pg'>
+                <h1 id='staff-hd'>STAFF</h1>
+            </div>
 
             <div className='staff-header'>
                 <h1 id='staff-hd'>STAFF</h1>
@@ -27,15 +32,26 @@ function StaffPage() {
                     {
                         staffs.map((staff, index) => (
                         <React.Fragment key={index}>
-                            <div className='project-images'>
-                                <img src={Daniel} alt={staff.name} />
-                                <h1>{staff.name}</h1>
-                                <p>{staff.about}</p>
+                            <div className='staff-imagez'>
+                                <img src={staff.img} alt={staff.name} />
+                                <div className='staff-detailz'>
+                                    <h1>{staff.name}</h1>
+                                    <p>{staff.about}</p>
+
+                                </div>
                             </div>
                         
                         </React.Fragment>
                         ))
                     }
+                </div>
+
+                 
+                <div className ="staff-btn">              
+                    <Link to='/allstaff' pathname='/allstaff'>
+                    <CustomButton content="SEE MORE" />          
+                    </Link>
+
                 </div>
 
             </div>

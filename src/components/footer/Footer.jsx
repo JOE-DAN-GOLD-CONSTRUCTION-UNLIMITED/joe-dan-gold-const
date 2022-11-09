@@ -2,6 +2,8 @@ import React from 'react'
 import './Footer.css'
 import { Link } from "react-router-dom";
 import logo from '../../assets/images/logo.png'
+import CustomButton from '../../components/custombutton/CustomButton';
+import { hover } from '@testing-library/user-event/dist/hover';
 
 function Footer() {
   return (
@@ -11,52 +13,91 @@ function Footer() {
 
                 <div className="logo box">
                     
-                    <div className='contentz'>
-                        <img id='logo' src={logo} alt="logo" />
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, asperiores? Saepe id ad veniam nobis inventore quia officiis voluptas provident iusto, eos autem repudiandae molestiae, praesentium culpa illum nesciunt corporis!</p>
-                    </div>
-                </div>
-
-                <div className="quick-links box">
-                    <h2>Quick Links</h2>
-                    <div className="content">
-                        <ul>
-                            <Link to='/'>
-                                <li>Home</li>
-                            </Link>
-
-                            <Link to='/about' >
-                                <li>About</li>
-                            </Link>
-                            
-                            <Link to='/projects'>
-                                <li>Projects</li>
-                            </Link>
-
-                            <Link to='/staff' >  
-                                <li>Staff</li>
-                            </Link>
-                            
-                            <Link to='/Contact Us'> 
-                                <li>Contact Us</li>
-                            </Link>
-                            
-
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div className="contact-us box">
-                    <h2>SIGN UP TO OUR NEWSLETTER</h2>                
-                    <div className='phone'>
-                        <input className='fme-input' name='phone' placeholder='Phone'/>
+                    <div className='content'>
+                        <Link to='/' >
+                            <img id='logo' src={logo} alt="logo" />
+                        </Link>
                     </div>
                     
+                </div>
 
-                    <div className='send-message'>
-                        <CustomButton id="sm-button" type={'submit'} content='SEND' style={{ width: '350px', height: '70px', borderRadius: '70px'}} />
+                <div className="qu-sm box">
+
+                    <div className="quick-links box">
+                        <h2>QUICK LINKS</h2>
+                        <div className="content">
+                            <ul>
+                                <Link to='/'>
+                                    <li>Home</li>
+                                </Link>
+
+                                <Link to='/about' >
+                                    <li>About</li>
+                                </Link>
+                                
+                                <Link to='/projects'>
+                                    <li>Projects</li>
+                                </Link>
+
+                                <Link to='/staff' >  
+                                    <li>Staff</li>
+                                </Link>
+                                
+                                <Link to='/contactus'> 
+                                    <li>Contact Us</li>
+                                </Link>                         
+
+                            </ul>
+                        </div>
                     </div>
+
+                    <div className='social-media box'>
+                        <h2>SOCIAL MEDIA</h2>
+                        <div className='content'>
+                            <div className='fb'>
+                                <li>Facebook</li>
+                            </div>
+                            <div className='tw'>
+                                <li>Twitter</li>
+                            </div>
+
+                            <div className='ig'>
+                                <li>Instagram</li>
+                            </div>
+
+                            <div className='ln'>
+                                <li>LinkedIn</li>
+                            </div>
+
+                            <div className='Yt'>
+                                <li>Youtube</li>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div className="contact-us box" id='cub'>
+                    <h2>SIGN UP TO OUR NEWSLETTER</h2> 
+                    <div className='content'>
+                        <div className='ft-name'>
+                            <input className='ft-input' name='Fullname' placeholder='Enter Your Full Name'/>
+                        </div>
+
+                        <div className='ft-email'>
+                            <input className='ft-input' name='email' placeholder='Enter Your Email'/>
+                        </div>
+
+                        <div className ="send-message-btn">              
+                            <Link to='/contactus' pathname='/contactus'>
+                            <CustomButton content="Sign Up" />          
+                            </Link>
+                        </div>
+
+                    </div>               
                 </div>
 
             </div>
@@ -71,10 +112,10 @@ function Footer() {
                     <div className='footer-right-bottom'>
                         <ul>
 
-                            <Link to='/faq' className='contentt'>  
+                            <Link to='/privacypolicy' className='contentt'>  
                                 <li>Privacy Policy</li>
                             </Link>
-
+                             && 
                             <Link to='/termsandconditions' className='contentt'>  
                                 <li>Terms and Condition</li>
                             </Link>
