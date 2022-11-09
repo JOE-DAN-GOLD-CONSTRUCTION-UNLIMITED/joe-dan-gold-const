@@ -2,8 +2,7 @@ import React from 'react'
 import './Footer.css'
 import { Link } from "react-router-dom";
 import logo from '../../assets/images/logo.png'
-import CustomButton from '../../components/custombutton/CustomButton';
-import { hover } from '@testing-library/user-event/dist/hover';
+import CustomButton from '../../components/custombutton/CustomButton'
 
 function Footer() {
   return (
@@ -18,7 +17,7 @@ function Footer() {
                             <img id='logo' src={logo} alt="logo" />
                         </Link>
                     </div>
-                    
+
                 </div>
 
                 <div className="qu-sm box">

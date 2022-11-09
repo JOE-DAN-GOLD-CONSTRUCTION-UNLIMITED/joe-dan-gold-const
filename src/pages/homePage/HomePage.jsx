@@ -2,7 +2,6 @@ import React from 'react'
 import './HomePage.css'
 import { Link } from "react-router-dom";
 import NavBar from '../../components/navBar/NavBar';
-import homeP from "../../assets/images/homeP.png";
 import CustomButton from '../../components/custombutton/CustomButton';
 import constserv from "../../assets/images/constserv.png";
 import electserv from "../../assets/images/electserv.png";
