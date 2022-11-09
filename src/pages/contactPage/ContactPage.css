@@ -139,7 +139,7 @@
 
 /* RESPONSIVE */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1000px) {
     
     .contact-us-header h1{
         font-size: 2rem;
@@ -176,42 +176,3 @@
     }
 }
 
-
-/* RESPONSIVE */
-
-@media screen and (max-width:2000px) {
-    
-    .contact-us-header h1{
-        font-size: 2rem;
-        margin-top: 50px;
-    }
-
-    .contact-details{
-        display: grid;
-    }
-
-    .contact-page-form{
-        width: 100%;
-        padding: 7% 0;
-        opacity: 0.9;
-        background-color: white;
-    }
-
-    .cn-send-message button{
-        width: 80%;
-    }
-
-    .map{
-        display: none;
-    }
-
-    .moving-truck{
-        display: none;
-        height: 50px;
-        padding: 10px 0;
-    }
-
-    .cnt-footer{
-        margin-top: 50px;
-    }
-}
