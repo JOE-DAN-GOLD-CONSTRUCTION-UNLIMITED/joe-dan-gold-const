@@ -125,8 +125,7 @@
     }
     
     .aboutus-info {
-        width: 100%;
-        background-color: whitesmoke;
+        width: 80%;
     }
     
     .aboutus-details{
@@ -142,7 +141,7 @@
         width: 100%;
         line-height: 1.5rem;
         font-weight:normal;
-       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .why-choose-us{
@@ -183,7 +182,96 @@
     
     .client-sat, .award, .trustable{
         width: 170px;
-        height: 120px;
+        height: 130px;
+        padding: 13px 2%;
+    }
+    
+    .client-sat h4, .award h4, .trustable h4{
+        display:flex;
+        justify-content: center;
+        font-size: 0.9rem;
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    .c-a-t h3{
+       display: none;
+    }
+
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1400px) {
+    .aboutus-header h1{
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .aboutus-pic{
+        display: none;
+    }
+    
+    .aboutus-info {
+        width: 80%;
+    }
+    
+    .aboutus-details{
+        padding: 0 5%;
+        position: relative;
+    }
+
+    .aboutus-details h1{
+        font-size: 3rem;
+    }
+
+    .aboutus-details p{
+        width: 100%;
+        line-height: 1.5rem;
+        font-weight:normal;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .why-choose-us{
+        background-image:none;
+        background-color: rgb(183, 182, 182);
+    }
+
+    .why-choose-us-info{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        color: black;
+    }
+
+    .why-choose-us h1{
+        font-size: 2.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    }
+
+    .why-choose-us p{
+        width: 100%;
+        line-height: 2rem;
+        font-size: 20px;
+        font-family:'Raleway', sans-serif;
+    }
+
+    .cl-aw-tr{
+        display: grid;
+    }
+
+    .client-sat img, .award img, .trustable img{
+        width: 60px;
+        margin: 0 auto;
+        display: grid;
+        text-align: center;
+        padding: 10% 0%;
+    }
+    
+    .client-sat, .award, .trustable{
+        width: 170px;
+        height: 130px;
         padding: 13px 2%;
     }
     

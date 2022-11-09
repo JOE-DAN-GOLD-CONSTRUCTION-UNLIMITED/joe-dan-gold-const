@@ -67,3 +67,28 @@
     padding-top: 0;
     text-align: start;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width:600px) {
+    
+    .client-box{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    
+    .client-remarkz img{
+        width: 100px;
+        height: 100px;
+        margin-left: 30px;
+    }
+    
+    .client-remarkz h1{
+        padding:1%  7%;
+    }
+
+    .client-remarkz p{
+        padding: 5% 7%;
+    }
+}

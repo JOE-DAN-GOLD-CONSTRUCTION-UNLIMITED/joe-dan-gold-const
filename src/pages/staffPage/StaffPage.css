@@ -124,6 +124,7 @@
 
     .staff-imagez img{
         object-fit:fill;
+        padding: 10%;
     }
 
     .staff-detailz{
@@ -131,7 +132,48 @@
     }
 
     .staff-btn button{
+        width: 250px;
+    }
+    
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1400px) {
+    .staff-header h1{
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+ 
+    .staff-details{
         width: 80%;
+        text-align:start;
+    }
+    
+    .staff-details p{
+        width: 100%;
+        line-height: 1.7rem;
+    }
+    .staff-images{
+       display: grid;
+       justify-content: center;
+
+    }
+    .staff-imagez{
+        width: 100%;
+    }
+
+    .staff-imagez img{
+        object-fit:fill;
+        padding: 10%;
+    }
+
+    .staff-detailz{
+        border-radius: 20px;
+    }
+
+    .staff-btn button{
+        width: 250px;
     }
     
 }
