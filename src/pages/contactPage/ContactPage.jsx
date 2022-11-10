@@ -114,8 +114,8 @@ function ContactPage() {
                     <div className='map'>        
                         <div class="gmap_canvas">        
                             <div class="mapouter">
-                                <div class="gmap_canvas">
-                                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=itf%20house%20abuja%20nigeria&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                <div class="gmap_canvass">
+                                    <iframe width="600" height="500" id="gmap_canvasss" src="https://maps.google.com/maps?q=itf%20house%20abuja%20nigeria&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                                     </iframe>
                                 </div>   
                             </div>   
