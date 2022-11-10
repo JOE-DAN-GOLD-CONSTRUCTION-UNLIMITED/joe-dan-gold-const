@@ -83,11 +83,11 @@ function Footer() {
                     <h2>SIGN UP TO OUR NEWSLETTER</h2> 
                     <div className='content'>
                         <div className='ft-name'>
-                            <input className='ft-input' name='Fullname' placeholder='Enter Your Full Name'/>
+                            <input className='ft-input' type='text' name='Fullname' placeholder='Enter Your Full Name'/>
                         </div>
 
                         <div className='ft-email'>
-                            <input className='ft-input' name='email' placeholder='Enter Your Email'/>
+                            <input className='ft-input' type='email' name='email' placeholder='Enter Your Email'/>
                         </div>
 
                         <div className ="send-message-btn">              
