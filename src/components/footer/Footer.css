@@ -40,9 +40,14 @@ footer *{
 .box h2{
     font-size: 1.2rem;
     color: #ffc107;
-    text-decoration:dotted ;
+    /* text-decoration:dotted ;
     text-decoration-line:underline;
-    text-decoration-thickness: 0.2rem;
+    text-decoration-color: white;
+    text-decoration-thickness: 0.2rem; */
+    border-bottom: 4px dotted white;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    width: 60%;
 }
 
 #logo{

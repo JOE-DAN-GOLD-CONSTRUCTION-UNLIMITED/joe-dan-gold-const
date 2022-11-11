@@ -3,7 +3,6 @@
     background-image: url(../../assets/images/homeP.png);
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: #424348; */
     height: 140vh;
 }
 
@@ -117,4 +116,52 @@
     .reconstruction{
        display: none;
     }
+  }
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1500px) {
+    
+    .home-info{
+        background-image: url(../../assets/images/homeP.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    
+    .home-info p{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .home-details{
+        width: 80%;
+        margin: 0 auto;
+        padding: 15% 4%;
+        color: white;
+    }
+
+    .services-done img{
+        width: 40px;
+    }
+
+    .construction-services, .reconstruction, .electrical-services{
+        background-color: white;
+        box-shadow: 0px 3.43px 3.43px 0px #0000003D;
+        width: 200px;
+        text-align: center;
+        padding: 2% 2%;
+    }
+
+    .services-done h4{
+        font-size: 1.0rem;
+    }
+    
+    .construction-services,.reconstruction, .electrical-services{
+        width: 150px;
+        height: 120px;
+        padding: 10px 2%;
+    }
+    
   }
