@@ -121,7 +121,7 @@
 
 /* RESPONSIVE */
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:2000px) {
     
     .home-info{
         background-image: url(../../assets/images/homeP.png);

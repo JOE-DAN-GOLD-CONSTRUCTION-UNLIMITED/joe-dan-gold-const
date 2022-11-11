@@ -47,7 +47,7 @@ footer *{
     border-bottom: 4px dotted white;
     margin-bottom: 30px;
     padding-bottom: 5px;
-    width: 60%;
+    width: 55%;
 }
 
 #logo{
@@ -122,6 +122,7 @@ footer *{
         margin: 0 auto;
         padding: 0 0;
     }
+
     #logo{
        margin-left: 50px;
     }
@@ -130,6 +131,19 @@ footer *{
         justify-content: center;
         align-items: center;
  
+    }
+
+    .box h2{
+        font-size: 1.2rem;
+        color: #ffc107;
+        text-decoration:dotted ;
+        text-decoration-line:underline;
+        text-decoration-color: white;
+        text-decoration-thickness: 0.2rem;
+        /* border-bottom: 4px dotted white;
+        margin-bottom: 30px;
+        padding-bottom: 5px; */
+        /* width: 60%; */
     }
 
     .footer-bottom, center{
