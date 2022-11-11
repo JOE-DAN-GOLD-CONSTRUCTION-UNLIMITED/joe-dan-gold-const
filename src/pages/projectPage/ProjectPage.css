@@ -34,15 +34,16 @@
 
 .project-images{
     display: flex;
-    width: 85%;
+    justify-content:space-around;
+    width: 80%;
     margin: 0 auto;
-    gap:30px;
+    gap:20px;
     flex-wrap: wrap;
+    object-fit: fill;
 }
 
 .project-imagez img{
-    width: 360px;
-    gap:20px
+    width: 330px;
 }
 
 
