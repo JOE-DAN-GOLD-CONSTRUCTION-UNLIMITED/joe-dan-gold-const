@@ -18,7 +18,7 @@
     margin-bottom: 0;
     letter-spacing: 0.4rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 
+    /* text-shadow: 
       -1px -1px 0 orange,
     -2px -2px 0 orange,
     -3px -3px 0 orange,
@@ -27,7 +27,7 @@
     -6px -6px 0 orange,
     -7px -7px 0 orange,
     -8px -8px 0 orange,
-    -10px -20px 30px orange; 
+    -10px -20px 30px orange;  */
 }
 
 .home-info p{
