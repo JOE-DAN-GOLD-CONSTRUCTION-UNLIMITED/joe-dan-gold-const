@@ -40,10 +40,6 @@ footer *{
 .box h2{
     font-size: 1.2rem;
     color: #ffc107;
-    /* text-decoration:dotted ;
-    text-decoration-line:underline;
-    text-decoration-color: white;
-    text-decoration-thickness: 0.2rem; */
     border-bottom: 4px dotted white;
     margin-bottom: 30px;
     padding-bottom: 5px;
@@ -94,7 +90,6 @@ footer *{
     letter-spacing: 1px;
     background-color:#424348;
     color:white;
-    font-weight: bolder;
     display: flex;
     justify-content: space-around;
 }
@@ -111,6 +106,8 @@ footer *{
 }
 .footer-right-bottom  a:hover{
     color:#ffc107;
+    transition: 0.5s ease-in;
+
 }
 
 
@@ -136,14 +133,9 @@ footer *{
     .box h2{
         font-size: 1.2rem;
         color: #ffc107;
-        text-decoration:dotted ;
-        text-decoration-line:underline;
-        text-decoration-color: white;
-        text-decoration-thickness: 0.2rem;
-        /* border-bottom: 4px dotted white;
-        margin-bottom: 30px;
-        padding-bottom: 5px; */
-        /* width: 60%; */
+        border-bottom: none;
+        text-decoration: none;
+        
     }
 
     .footer-bottom, center{

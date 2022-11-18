@@ -34,7 +34,7 @@
     width: 70%;
     line-height: 2rem;
     font-size: 1.2rem;
-    font-weight: bold;
+    word-spacing: 0.2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -79,16 +79,19 @@
     }
     
     .home-details{
-        padding-top: 40%;
+        width: 100%;
     }
     
-    .home-info h1{
+    .home-details h1{
+        margin-top: 50%;
         font-size: 3rem;
     }
     
-    .home-info p{
-        margin-bottom: 30px;
+    .home-details p{
         width: 100%;
+        margin-bottom: 30px;
+        font-family:'Raleway', sans-serif;
+
     }
     
     .services-done img{
@@ -132,7 +135,7 @@
     
     .home-info p{
         margin-bottom: 30px;
-        width: 70%;
+        font-family:'Raleway', sans-serif;     
     }
     
     .home-details{
